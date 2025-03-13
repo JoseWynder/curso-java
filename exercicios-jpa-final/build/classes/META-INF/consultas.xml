@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd">
+
+	<named-query name="obterFilmesComNotaMaiorQue">
+<!-- 	Lembrando que aqui é acessado as classes e seus atributos.
+		 Realizando a consulta sem se preocupar com o nome dessas colunas na tabela. -->
+		<query>
+			select distinct f from Filme f
+			join fetch f.atores
+			where f.nota > :nota
+		</query>
+<!-- 	Em "select distinct f from Filme f" o "distinct" é necessário já que ao
+		 realizar uma junção pode haver valores duplicados. -->
+		
+<!-- 	Em "join fetch f.atores" está sendo realizado uma junção da tabela e o uso do
+		 fetch indica que o atributo atores deve ser carregada junto com o filme. -->
+		 
+<!-- 	Em "where f.nota > :nota" eu estou passando parâmetro para uma consulta. -->
+	</named-query>
+	
+	
+	<named-native-query name="obterMediaGeralDosFilmes"
+	result-set-mapping="NotaFilmeMap">
+<!-- 	O "result-set-mapping" espera receber onde está o mapeamento dizendo
+		 exatamente qual a classe que ele vai mapear. -->
+<!-- 	Consulta SQL -->
+		<query>
+			select avg(nota) as media from filmes
+		</query>
+	</named-native-query>
+	
+	<sql-result-set-mapping name="NotaFilmeMap">
+<!-- 		NotaFilme não é uma entidade! -->
+		<constructor-result target-class="modelofinal.consulta.NotaFilme">
+<!-- 		Nesse caso, ele espera que a classe "NotaFilme" tenha um construtor que
+			 receba como parâmetro o atributo "media" do tipo "java.lang.Double". -->
+<!-- 		Sendo assim, a partir de uma consulta nativa ele vai criar o
+			 objeto usando esse <sql-result-set-mapping>. -->
+			<column name="media" class="java.lang.Double" />
+		</constructor-result>
+	</sql-result-set-mapping>
+
+</entity-mappings>
