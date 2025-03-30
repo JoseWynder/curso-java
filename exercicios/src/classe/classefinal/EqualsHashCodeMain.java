@@ -32,7 +32,7 @@ public class EqualsHashCodeMain {
 		
 		System.out.println(u1.equals(u2)); // False
 			// O resultado continua dando false porque por padrão o equals compara da mesma forma que o "==".
-			// (caso ele já não tenha sido implementado na classe 'EqualsHashCodeAux').
+			// (caso ele já não tenha sido implementado na classe 'EqualsHashCode').
 		
 		
 		// HashCode retorna int

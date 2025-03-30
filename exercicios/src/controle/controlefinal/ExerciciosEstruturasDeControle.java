@@ -1,32 +1,34 @@
 package controle.controlefinal;
 
+import java.util.Scanner;
+
 public class ExerciciosEstruturasDeControle {
 	public static void main(String[] args) {
 		
 	// EXERCÍCIO 1.	
 		
-//		float num = 0;
-//		System.out.println("\nSAIR [-1]\n");
-//		Scanner entrada = new Scanner(System.in);
-//		
-//		do {
-//		System.out.print("Digite um número: ");
-//		num = entrada.nextFloat();
-//		
-//		if(num > 0 && num < 10) {
-//			System.out.print("O número está ENTRE 0 e 10 e ");
-//		} else {
-//			System.out.print("O número não está ENTRE 0 e 10 e ");
-//		}
-//		if(num % 2 == 0) {
-//			System.out.println("é par!\n");
-//		} else {
-//			System.out.println("não é par!\n");
-//		}
-//		
-//		} while(num != -1);
-//		
-//		entrada.close();
+		float num = 0;
+		System.out.println("\nSAIR [-1]\n");
+		Scanner entrada = new Scanner(System.in);
+		
+		do {
+		System.out.print("Digite um número: ");
+		num = entrada.nextFloat();
+		
+		if(num > 0 && num < 10) {
+			System.out.print("O número está ENTRE 0 e 10 e ");
+		} else {
+			System.out.print("O número não está ENTRE 0 e 10 e ");
+		}
+		if(num % 2 == 0) {
+			System.out.println("é par!\n");
+		} else {
+			System.out.println("não é par!\n");
+		}
+		
+		} while(num != -1);
+		
+		entrada.close();
 
 	// EXERCÍCIO 2.	
 		

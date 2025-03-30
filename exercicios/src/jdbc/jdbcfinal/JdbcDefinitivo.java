@@ -16,7 +16,7 @@ public class JdbcDefinitivo {
 	 *  o driver do MySQL que implementa as interfaces definidas na api do jdbc. E ai a gente
 	 *  consegue interagir com o MySQL. Se eu baixar um driver do PostgreSQL, eu vou utilizar
 	 *  as mesmas interfaces, para interagir com o banco de dados PostgreSQL.
-	 * Isso vale para outros bancos como o Oragle, SQLserver da microsft, ...
+	 * Isso vale para outros bancos como o Oragle, SQLserver da microsoft, ...
 	 */
 	
 	

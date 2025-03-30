@@ -1,7 +1,5 @@
 package controle.controlefinal;
 
-import java.util.Scanner;
-
 public class RevisaoExercicios {
 	public static void main(String[] args) {
 		
@@ -23,7 +21,7 @@ public class RevisaoExercicios {
 //			if (num % 2 == 0) {
 //				System.out.println("e é par!");
 //			} else {
-//				System.out.println("e não é par!");				
+//				System.out.println("e não é par!");
 //			}
 //			
 //		}while(num != -1);
@@ -84,37 +82,37 @@ public class RevisaoExercicios {
 		
 		// EXERCÍCIO 4.	
 		
-		Scanner entrada = new Scanner(System.in);
-		
-		System.out.print("Digite um número: ");
-		long num = entrada.nextLong();
-		
-		entrada.close();
-		
-		
-		boolean primo;
-		
-		externo: if (num == 1) {
-			primo = false;
-		} else if (num == 2) {
-			primo = true;
-		} else if (num % 2 == 0) {
-			primo = false;
-		} else {
-			for(long divisor = 3; divisor <= (num/divisor); divisor += 2) {
-				if (num % divisor == 0) {
-					primo = false;
-					break externo;
-				}
-			}
-			primo = true;
-		}
-		
-		if(primo) {
-			System.out.println("O número digitado (" + num + ") é Primo!");
-		} else {			
-			System.out.println("O número digitado (" + num + ") não é Primo!");
-		}
+//		Scanner entrada = new Scanner(System.in);
+//		
+//		System.out.print("Digite um número: ");
+//		long num = entrada.nextLong();
+//		
+//		entrada.close();
+//		
+//		
+//		boolean primo;
+//		
+//		externo: if (num == 1) {
+//			primo = false;
+//		} else if (num == 2) {
+//			primo = true;
+//		} else if (num % 2 == 0) {
+//			primo = false;
+//		} else {
+//			for(long divisor = 3; divisor <= (num/divisor); divisor += 2) {
+//				if (num % divisor == 0) {
+//					primo = false;
+//					break externo;
+//				}
+//			}
+//			primo = true;
+//		}
+//		
+//		if(primo) {
+//			System.out.println("O número digitado (" + num + ") é Primo!");
+//		} else {			
+//			System.out.println("O número digitado (" + num + ") não é Primo!");
+//		}
 		
 		// EXERCÍCIO 5.
 		
@@ -224,7 +222,8 @@ public class RevisaoExercicios {
 //		System.out.print("Escreva uma palavra: ");
 //		String palavra = entrada.next();
 //		
-//		for(byte c = 0; c < palavra.length(); c++) {
+//		int tamanho = palavra.length();
+//		for(int c = 0; c < tamanho; c++) {
 //			System.out.printf("\n %c", palavra.toUpperCase().charAt(c));
 //		}
 //		
@@ -234,36 +233,25 @@ public class RevisaoExercicios {
 		
 //		float num;
 //		float maior = 0;
-//		byte c = 1;
+//		byte c = 0;
 //		
 //		Scanner entrada = new Scanner(System.in);
 //		
 //		do {
-//			System.out.print("Digite o " + c + "° valor: ");
+//			System.out.print("Digite o " + (c+1) + "° valor: ");
 //			num = entrada.nextFloat();
-//			++c;
-//			if (num > maior) {
+//			c++;
+//			if (num > maior || c == 1) {
 //				maior = num;
 //			}
-//		} while(c <= 10);
+//		} while(c < 5);
 //		
 //		entrada.close();
 //		
 //		System.out.println("\nO maior número digitado foi: " + maior);
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 	}
 }
+

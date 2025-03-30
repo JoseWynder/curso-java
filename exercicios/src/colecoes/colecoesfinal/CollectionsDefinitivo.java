@@ -273,7 +273,7 @@ public class CollectionsDefinitivo {
 		
 		System.out.println("Peek e Element\n");
 		
-		System.out.println(livros.peek()); // remove "O Hobbit" por ser last in/first out.
+		System.out.println(livros.peek()); // pega "O Hobbit" por ser last in/first out.
 		System.out.println(livros.element());
 		
 		System.out.println("\nForeach\n");
@@ -340,8 +340,8 @@ public class CollectionsDefinitivo {
 		
 		System.out.println();
 		
-//		System.out.println(usuarios.remove(1)); // .remove(Key) remove e retorna o valor da chave.
-		System.out.println(usuarios.remove(4, "Gui")); // .remove(Key, Value) remove apartir da chave e valor.
+//		System.out.println(usuarios.remove(1)); // .remove(Key) remove e retorna o valor referente aquela chave.
+		System.out.println(usuarios.remove(4, "Gui")); // .remove(Key, Value) remove a partir da chave e valor.
 		 // (retorna boolean)
 		
 		System.out.println();
@@ -354,16 +354,16 @@ public class CollectionsDefinitivo {
 			System.out.println(valor);
 		}
 		
-		for(Integer chave: usuarios.keySet()) { // Percorrendo a chave e valor improvisado
+		for(Integer chave: usuarios.keySet()) { // Forma improvisada
+				// Percorrendo chave e valor
 			System.out.println(chave + " ==> " + usuarios.get(chave));
 		}
 		
 		System.out.println();
 		
-		for(Entry<Integer, String> registro: usuarios.entrySet()) { // Entry(java.util.Map) 
-				//Percorrendo chave e valor
-			System.out.print(registro.getKey() + " ==> ");
-			System.out.println(registro.getValue());
+		for(Entry<Integer, String> registro: usuarios.entrySet()) { // Entry(java.util.Map)
+				// Percorrendo chave e valor
+			System.out.println(registro.getKey() + " ==> " + registro.getValue());
 		}
 		
 	}

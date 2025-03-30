@@ -17,7 +17,7 @@ public class TiposDeDados {
         double doubleVariable = 1.7976931348623157E308;   // 8 bytes, variável padrão. 
 
         // Tipo char para caracteres Unicode
-        char charVariable = 'A';    // 2 bytes, 0 a 65535.
+        char charVariable = 'A';    // 2 bytes.
 
         // Tipo booleano para valores verdadeiro/falso
         boolean booleanVariable = true; // true ou false.

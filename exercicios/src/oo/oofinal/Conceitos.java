@@ -330,7 +330,7 @@ public class Conceitos {
 		 * Carro c = new Civic(); 
 		 * 		// Existe a possíbilidade de criar uma váriavel mais genérica e instânciar um "Civic".
 		 * 
-		 * O polimorfismo dinâmico existe nessa situação porque uma vez criada uma variavél do tipo "Carro" e instânciada
+		 * O polimorfismo dinâmico existe nessa situação porque uma vez criada uma variavél do tipo "Carro" e instânciar
 		 *  um "Civic", você pode usar essa mesma váriavel 'c' para instânciar uma "Ferrari".
 		 *  
 		 *  Você consegue usando a mesma váriavel mais genérica, atribuir objetos de multiplas formas(objetos polimorficos).

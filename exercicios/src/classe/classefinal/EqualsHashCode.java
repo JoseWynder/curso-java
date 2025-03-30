@@ -18,11 +18,11 @@ public class EqualsHashCode {
 		// Todos os objetos, incluindo arrays, herdam os métodos desta classe.
 		
 			if(objeto instanceof EqualsHashCode) { 
-				// Verificando se o objeto passado é uma instância de EqualsHashCodeAux.
+				// Verificando se o objeto passado é uma instância de EqualsHashCode.
 				/* Essa verificação precisa ser feita pelo fato de que não podemos dizer que um Usuario
 				 *  é igual a alguma coisa que não tem nada a ver com um Usuario.
 				 *   Um Usuario nunca será igual a uma Data ou a um Produto.
-				 * O mesmo vale para EqualsHashCodeAux.
+				 * O mesmo vale para EqualsHashCode.
 				 */
 				EqualsHashCode outro = (EqualsHashCode) objeto; // Casting de um Object para EqualsHashCodeAux.
 				

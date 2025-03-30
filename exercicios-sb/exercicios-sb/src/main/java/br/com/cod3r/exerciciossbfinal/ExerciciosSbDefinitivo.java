@@ -137,7 +137,7 @@ public class ExerciciosSbDefinitivo {
 		
 		@GetMapping
 		public Cliente oberClientePorId2(@RequestParam(name = "id", defaultValue = "1") int id) {
-			return new Cliente(id, "João Augusto", "111.222.333-44");
+			return new Cliente(id, "João Augusto", "111.222.333-44"); 
 		}
 	}
 	
@@ -191,7 +191,7 @@ public class ExerciciosSbDefinitivo {
 	 *   
 	 *  O DELETE é responsável por realizar a exclusão.
 	 *  
-	 *  Como já foi dito, essa questão dos métodos tem uma idéia de semântica, de significado. Não necessariamente você
+	 *  Como já foi dito, essa questão dos métodos tem uma ideia de semântica, de significado. Não necessariamente você
 	 *   precisa para excluir, utilizar o DELETE. Já que a exclusão é feita dentro da sua aplicação.
 	 *   Esses métodos estão funcionando entre o browser e a aplicação spring boot, ou seja, o seu servidor.
 	 *   Eles funcinam como forma de comunicação entre esses dois computadores na internet.
@@ -352,7 +352,7 @@ public class ExerciciosSbDefinitivo {
 	 * O conceito de convenção é bem forte no Spring Boot. Principalmente para essa finalidade.
 	 * Todos os métodos que começam com "find" o spring entende que aquele método vai realizar uma pesquisa.
 	 * A equipe do Spring Boot definiu uma série de convenções que vão nos ajudar a criar métodos sem a gente
-	 *  necessáriamente precisar implementar esses métodos.
+	 *  necessariamente precisar implementar esses métodos.
 	 */
 	
 	

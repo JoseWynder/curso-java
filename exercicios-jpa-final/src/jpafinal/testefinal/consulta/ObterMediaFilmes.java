@@ -9,7 +9,7 @@ public class ObterMediaFilmes {
 
 		DAO<NotaFilme> dao = new DAO<>(NotaFilme.class);
 		// Como estamos trabalhando com uma função agregadora que não retorna mais
-		//  de 1 elemento, é interessante criar um método no DAO que retorna a
+		//  de 1 elemento, é interessante criar um método no DAO que retorna
 		//  somente o elemento e não uma lista.
 		NotaFilme nota = dao.consultarUm("obterMediaGeralDosFilmes");
 

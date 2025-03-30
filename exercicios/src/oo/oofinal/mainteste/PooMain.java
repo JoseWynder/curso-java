@@ -22,7 +22,7 @@ public class PooMain {
 
 		System.out.println();
 		
-//		System.out.println(carro1.velocMaxima); // Graças ao dado ser público.
+//		System.out.println(carro1.VELOCMAXIMA); // Graças ao dado ser público.
 		
 		carro1.ligarAr();
 		carro1.ligarTurbo(); 

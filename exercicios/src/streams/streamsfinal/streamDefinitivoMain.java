@@ -112,7 +112,7 @@ public class streamDefinitivoMain {
 		outrasLangs.parallelStream().forEach(print);
 		
 //		Stream.generate(() -> "a").forEach(print); // Gera valores infinitos sem ordenação.
-//		Stream.iterate(0, n -> n + 1).forEach(println); // Gera valores infinitos com ordenação.
+//		Stream.iterate(0, n -> n + 1).forEach(printf); // Gera valores infinitos com ordenação.
 		
 		
 		
@@ -144,7 +144,7 @@ public class streamDefinitivoMain {
 		/* OBS: Dependendo da linguagem essas operações são tratadas de formas diferentes.
 		 * Por exemplo, em JS, o Array é utilizado para fazer todas essas operações.
 		 * O map está dentro do Array, o filter está dentro do Array, o reduce, ...
-		 * Enquanto no Java isso é encontrado detro do Stream.
+		 * Enquanto no Java isso é encontrado dentro do Stream.
 		 */
 		
 		

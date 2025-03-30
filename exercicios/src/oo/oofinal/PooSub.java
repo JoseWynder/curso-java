@@ -16,7 +16,7 @@ public class PooSub extends PooSuper implements PooInterface1, PooInterface2 {
 		setAceleracao(15);
 	}
 
-//	{ aceleracao = 5; } // O privated invalida.
+//	{ aceleracao = 5; } // O private invalida.
 	
 //	@Override //(annotation) sobrescrevendo o método da super classe
 //	public final void acelerar() { // Ao sobrescrever um método, não é possível diminuir sua visibilidade!

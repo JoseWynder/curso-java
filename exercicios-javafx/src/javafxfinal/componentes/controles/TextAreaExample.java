@@ -15,6 +15,7 @@ public class TextAreaExample extends Application {
         // Criação do TextArea para entrada de texto
         TextArea textArea = new TextArea(); // Área de texto vazia
         textArea.setPromptText("Digite seu texto aqui..."); // Texto de sugestão
+        textArea.setWrapText(true);
 
         // Criação do botão
         Button button = new Button("Mostrar Texto");

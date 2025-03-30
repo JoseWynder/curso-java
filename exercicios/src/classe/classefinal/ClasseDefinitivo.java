@@ -31,7 +31,7 @@ public class ClasseDefinitivo {
 	
 	/* 
 	 * A classe define um tipo e os Objetos representam os DADOS.
-	 * A classe dá a estrutura(ESTRUTURA DE DADOS), e o que você cria apartir da classe são os Objetos.
+	 * A classe dá a estrutura(ESTRUTURA DE DADOS), e o que você cria a partir da classe são os Objetos.
 	 * 
 	 * Objeto == Instância.
 	 * Eu criei 10 Objetos do tipo Produto.
@@ -67,7 +67,7 @@ public class ClasseDefinitivo {
 	 * Quando você utiliza essa palavra(STATIC) antes de um atributo você está dizendo que esse atributo pertence a classe.
 	 *                                          
 	 * Objeto.membro
-	 * Apartir de um Objeto você consegue acessar os membros dele(independente se é de um Atributo ou Método).  
+	 * A partir de um Objeto você consegue acessar os membros dele(independente se é de um Atributo ou Método).  
 	 * Do mesmo jeito com Classes.
 	 * 
 	 *                                           
@@ -149,16 +149,16 @@ public class ClasseDefinitivo {
 	    Enquanto em um atributo pertencente a classe, independente a quantidade de instâncias criadas, todas compartilham apenas um unico atributo.
 	 *
 	 * Você só consegue acessar um membro de instância após criar uma instância.
-	    Em outras palavras, você precisa instânciar um objeto para apartir desse objeto acessar a variável.
+	    Em outras palavras, você precisa instânciar um objeto para a partir desse objeto acessar a variável.
 	    Exemplo:
-	    	String nome = "José"; //criado em outra classe
+	    	String nome = new String("José"); //criado em outra classe
 	    	
 	    	ClasseDefinitivo d1 = new ClasseDefinitivo();
 	    	System.out.println(d1.nome);
 	    	
-	 * Para acessar um membro de classe, basta acessa-lo.
+	 * Para acessar um membro de classe, basta acessá-lo.
 	   Exemplo:
-	   		static String nome = "José"; //criado em outra classe
+	   		static String nome = new String("José"); //criado em outra classe
 	   		
 	   	    System.out.println(ClasseDefinitivo.nome); 
 	  	    
@@ -175,7 +175,7 @@ public class ClasseDefinitivo {
 	  * static acessa static, instância acessa instância.
 	  * Por this ser uma instância, ele não pode ser utilizado em métodos estáticos(pertencente a classe).
 	  * 
-	  * Você pode usar o this() para apartir de um construtor chamar outro construtor.
+	  * Você pode usar o this() para a partir de um construtor chamar outro construtor.
 	  * O que vai definir qual construtor você está chamando é a quantidade e a ordem dos parâmetros.
 	  * Um construtor com o método this() não pode chamar outro construtor com o método this() em loop;
 	  */

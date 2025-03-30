@@ -46,7 +46,7 @@ public class ProtocoloHTTP {
 	 *  informações, seu carrinho de compra, ...
 	 * Mas, nativamente o protocolo é stateless. Ou seja, não tem estado.
 	 *  Toda conexão é como se fosse a primeira vez. Você abre a conexão manda os dados e recebe os dados
-	 *  devolta, mas o protocolo em si é stateless.
+	 *  de volta, mas o protocolo em si é stateless.
 	 *  
 	 * - Cliente-Servidor
 	 * Ele é muito fortemente baseado no conceito de requisição e resposta. Eu mando uma requisição para
@@ -133,32 +133,23 @@ public class ProtocoloHTTP {
 	 * Cliente ----     URL + Params    ----> Servidor
 	 * Cliente <---  HTML, CSS, JS, ...  ---- Servidor
 	 * 
-	 * Para montar uma página, esse fluxo de requisição e resposta é feito muitas vezes.
-	 * Por isso, uma das tecnicas que você vê muito comumente no desenvolvimento web é você pegar,
-	 *  por exemplo, uma aplicação que foi desenvolvida usando 60 arquivos JS, você pegar todos os
-	 *  arquivos minificar(comprimir o máximo possível) e juntar tudo isso em um arquivo só.
-	 * Obviamente que se o arquivo ficar muito grande você tem que separar isso para você não
-	 *  sobrecarregar demais a carga inicial do seu site. Mas de qualquer forma você fazer 60 requisições
-	 *  diferentes para pegar arquivos muito pequenos já que o protocolo TCP/IP tem todo esse handshake
-	 *  de comunicação, ele vai lá e manda uma requisição para abrir a conexão, recebe um reconhecimento,
-	 *  depois manda uma outra requisição, só isso para fazer o handshake inicial para de fato mandar
-	 *  os dados, então, é interesssante que você diminua a quantidade de requests necessárias para 
-	 *  fazer a carga de uma página. Então, juntar vários, por exemplo, JS em um só arquivo, juntar vários css
-	 *  em um só arquivo, é muito interessante ser feito esse tipo de estratégia.
-	 * Fora que tem muitas outras estratégias para você conseguir diminuir a carga do seu site.
-	 * Você tem redes de alto desempenho como as CDNs(content delivery networks) que você espalha seus
-	 *  arquivos estáticos em vários locais diferentes e no momento em que o usuário vai carregar o site,
-	 *  aquele arquivo que tiver com uma menor latência, menor nível de demora para receber o arquivo,
-	 *  ele é provido. Ou seja, a resposta é dada pelo computador que tem a menor latência.
-	 * Sendo assim, existem várias tecnicas. Mas, uma delas é você minimizar, diminuir a quantidade de 
-	 *  requisições necessárias para você obter os arquivos. Obviamente se o arquivo ficar muito grande fica
-	 *  inviável, arquivos de 3 ou 4 megas para você carregar uma página. Então você acaba tendo que também
-	 *  quebrar para que em momentos diferentes do seu sistema você divida essa carga inicial.
-	 * Mas, para você entender que esse fluxo acontece repetidamente dentro de um protocolo stateless,
-	 *  então, quando ele for abrir uma conexão ele vai de fato ter um handshake de comunicação e aí ele
-	 *  obter essas informações a partir do servidor baseado em requisição e resposta. Por que é um
-	 *  protocolo baseado em Cliente-Servidor como já foi dito anteriormente.
-	 *  
+	 * No desenvolvimento web, o fluxo de requisição e resposta acontece diversas vezes para montar uma página.
+	 * Por isso, uma técnica muito comum é minimizar a quantidade de arquivos e requisições para melhorar o desempenho do site.
+	 * Por exemplo, imagine uma aplicação que usa 60 arquivos JavaScript separados. Em vez de carregar cada um individualmente,
+	 *  é mais eficiente minificá-los (comprimir o código ao máximo) e juntá-los em um único arquivo. No entanto,
+	 *  se esse arquivo ficar muito grande, pode ser necessário dividi-lo para não sobrecarregar a carga inicial da página.
+	 * O motivo para essa otimização está no funcionamento do protocolo TCP/IP. Cada requisição feita pelo navegador envolve um
+	 *  "handshake" de comunicação, ou seja, um processo de abertura de conexão que inclui o envio e o recebimento de confirmações
+	 *  antes da transferência real dos dados. Quanto mais requisições forem feitas, maior será o impacto na performance da página.
+	 * Além da redução do número de arquivos, outras estratégias podem ser usadas para melhorar o carregamento do site.
+	 * Um exemplo são as CDNs (Content Delivery Networks), redes de servidores distribuídos em vários locais.
+	 * Quando um usuário acessa um site, os arquivos estáticos (como imagens, CSS e JavaScript) são carregados a partir do servidor
+	 *  mais próximo ou do que tem menor latência, reduzindo o tempo de resposta.
+	 * Resumindo, diminuir a quantidade de requisições melhora o desempenho, mas é importante encontrar um equilíbrio.
+	 * Arquivos muito grandes podem ser um problema, então, em alguns casos, é melhor dividi-los e carregá-los conforme necessário.
+	 * Como o protocolo HTTP é stateless (não mantém o estado entre as requisições),
+	 *  cada comunicação entre cliente e servidor precisa passar por esse processo repetidamente.
+	 * 
 	 *  
 	 * Requisição via GET
 	 * Cabeçalho:
@@ -201,7 +192,7 @@ public class ProtocoloHTTP {
 	 * Por outro lado, se você estiver acessando, por exemplo, um serviço de login, você vai querer que a
 	 *  sua senha apareça diretamente na URL? Nesse caso não é interessante.
 	 * Para esse tipo de cenário, você tem requisições do tipo POST, que os parâmetros vão no corpo da 
-	 *  requisição. Quer quer dizer que se eu passar os parâmetros no corpo da requisição a minha
+	 *  requisição. Quer dizer que se eu passar os parâmetros no corpo da requisição a minha
 	 *  requisição vai ser segura? Não. Para você ter uma requisição segura você precisa ter a sua
 	 *  requisição executando em cima de um protocolo HTTPS. Que é exatamente o que está acontecendo aqui
 	 *  "https://www.google.com.br/search?q=web+moderno&hl=pt-BR".

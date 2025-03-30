@@ -108,11 +108,6 @@ public class LambdaDefinitivoMain {
 		System.out.println("\nMétodo forEach + Consumer\n");
 		produtos.forEach(imprimirNome); // Pode fazer ou mudar o que fazer no "imprimirNome".
 		
-		System.out.println("\nForeach + toString()\n");
-		for (LambdaDefinitivo p : produtos) { // Funciona por causa do "toString()" de LambdaDefinitivo.
-			System.out.println(p);
-		}
-		
 		System.out.println("\nMétodo forEach + referência para método\n");
 		produtos.forEach(LambdaDefinitivoMain::meuImprimir); // Pode fazer ou mudar o que fazer no "meuImprimir".
 		// Referência de um método.

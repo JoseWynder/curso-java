@@ -47,7 +47,7 @@ public class DAO<E /* extends Entidade */ > {
 			emf = Persistence
 					.createEntityManagerFactory("exercicios-jpa-final");
 			// A "Persistence" é possivelmente a única classe do jpa.
-			// Para o método "createEntityManagerFactory" é passado como  parâmetro o nome
+			// Para o método "createEntityManagerFactory" é passado como parâmetro o nome
 			//  da unidade de persistência, o banco de dados que você quer conectar.
 			// Você está passando para a "Fábrica de conexões" onde estão as informações que
 			//  ele vai precisar para abrir uma conexão com o banco de dados.

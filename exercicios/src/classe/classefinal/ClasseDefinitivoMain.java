@@ -8,20 +8,20 @@ public class ClasseDefinitivoMain {
 		   (ClasseDefinitivo e ClasseDefinitivoMain estão dentro do Pacote "classe")
 		   eu consigo utilizar a classe ClasseDefinitivo sem necessariamente precisar importa-la.
 		    Juntamente com todos os arquivos que estão dentro de "Java.lang".
-		 * Se eu fosse importar, teria que acrescentar "import classe.classeFinal.ClasseDefinitivo;" depois de "package classe.classeFinal;".
+		 * Se eu fosse importar, teria que acrescentar "import classe.classefinal.ClasseDefinitivo;" depois de "package classe.classefinal;".
 		 * 
 		 */
 		
 		// CONSTRUTOR
 		
 		/*
-		 * O Construtor é um método especial que apartir de uma classe criar Objetos.
+		 * O Construtor é um método especial que a partir de uma classe criar Objetos.
 		 * "new" é a palavra reservada responsável por chamar um construtor.
 		 * A unica diferença anatômica para um método é a ausência do tipo de retorno!
 		 * O nome da classe define o nome do Construtor.
 		 * 
 		 * Toda classe possui um Construtor padrão ( ClasseDefinitivo() ). 
-		    Apartir do momento em que você cria outro Construtor ( ClasseDefinitivo(int a) ), o padrão deixa de existir.
+		    A partir do momento em que você cria outro Construtor ( ClasseDefinitivo(int a) ), o padrão deixa de existir.
 		 * 
 		 * 
 		 */

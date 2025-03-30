@@ -45,7 +45,7 @@ public class Anotacoes {
 	    // alt +shift + 'r' edita o nome da variável em todos os locais.
         // ctrl + shift + 'o' organiza os imports
 	    // crtl + '1' sugere algumas alterações
-	    // crtl + shift = 'f' faz a indentação automática.
+	    // crtl + shift + 'f' faz a indentação automática.
 	    // alt + shift + 's' abre o Source.
 	    // Ctrl + shift + 't' pesquisar em todas as classes.
 	    // Alt + shift + 'z' envolva com - try/catch
@@ -67,7 +67,7 @@ public class Anotacoes {
 		System.out.println(y);
 		// Tipos primitivos não tem o operador "."
 		
-		System.out.println("Olá pessoal".charAt(0)); // .charAt(0) Mostra o carácter na posição requerida.
+		System.out.println("Olá pessoal".charAt(0)); // .charAt(int) Mostra o carácter na posição requerida.
 		System.out.println(s.length()); // .length() Mostra o tamanho da String.
 		System.out.println(s.startsWith("Bom")); // .startsWith("Bom") Verifica se a String começa com "Bom".
 		System.out.println(s.endsWith("DIA")); // .endsWith("DIA") Verifica se a String termina com "DIA".
@@ -183,6 +183,7 @@ public class Anotacoes {
 		
 		Integer num1 = 10000;
 		System.out.println(num1.toString().length());
+		
 		
 		int num2 = 100000;
 		System.out.println(Integer.toString(num2).length());

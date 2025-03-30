@@ -26,7 +26,7 @@ public class JpaDefinitivo {
 	 * Nessa situação, quando você tem o active record pattern, a própria
 	 *  entidade, ou seja, o próprio objeto que tem relação com determinada tabela
 	 *  do banco de dados, tem dentro dele todos os métodos responsáveis para persistir.
-	 * É como se fosse um regitro ativo. O próprio objeto de forma ativa tem os
+	 * É como se fosse um registro ativo. O próprio objeto de forma ativa tem os
 	 *  métodos necessários para se inserir dentro do banco de dados.
 	 * Normalmente isso é feito a partir de herança. Você faz com que determinado objeto
 	 *  herde de uma classe que tenha todos os métodos utilizados para persistir.
@@ -83,7 +83,7 @@ public class JpaDefinitivo {
 	//  para não perder o controle do que está sendo feito por baixo dos panos.
 	
 	// No JPA utilizamos o JPQL(Java Persistence Query Language).
-	// Não estaremos consultado tabelas e sim objetos.
+	// Não estaremos consultando tabelas e sim objetos.
 	// Quem está convertendo o JPQL para SQL é o próprio framework.
 	// Se o nome da tabela é "tb_clientes" e o nome da classe é "Cliente"
 	//  você vai selecionar em cima de "Cliente", em cima da classe.
