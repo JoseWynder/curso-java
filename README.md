@@ -1,2 +1,2 @@
 # curso-java
- Material do Curso de Java da Cod3r.
+ Material do curso de Java da Cod3r
